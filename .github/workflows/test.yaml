@@ -47,8 +47,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: |
-            ${{ secrets.DOCKER_REGISTRY }}/${{ github.repository }}
+          images: ${{ secrets.DOCKER_REGISTRY }}/${{ github.repository }}
           tags: |
             type=raw,value=latest
 
