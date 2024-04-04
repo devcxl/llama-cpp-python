@@ -8,7 +8,7 @@ a = Analysis(
     ['llama_cpp/server/__main__.py'],
     pathex=[],
     binaries=[],
-    datas=[('/home/runner/work/llama-cpp-python/llama-cpp-python/llama_cpp/libllama.so','.')],
+    datas=[('/home/runner/work/llama-cpp-python/llama-cpp-python/llama_cpp/libllama.so','./llama_cpp/')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
