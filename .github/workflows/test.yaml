@@ -33,7 +33,7 @@ jobs:
       
       - name: Look path
         run: |
-          ehco "${PWD}"
+          echo "${PWD}"
           ls ${{ github.workspace }}
       
       - name: Login to a private Container registry
