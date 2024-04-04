@@ -27,7 +27,7 @@ jobs:
           python3 -m pip install .[all] -v
           python3 -m pip install pyinstaller
       - name: Build package
-        run: pyinstaller llama-serve.spec
+        run: pyinstaller llama-server.spec
       - name: upload artifact
         uses: actions/upload-artifact@v3
         with:
