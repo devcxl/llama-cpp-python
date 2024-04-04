@@ -30,7 +30,12 @@ jobs:
 
       - name: Build package
         run: pyinstaller llama-server.spec
-
+      
+      - name: Look path
+        run: |
+          ehco "${PWD}"
+          ls ${{ github.workspace }}
+      
       - name: Login to a private Container registry
         uses: docker/login-action@v3
         with:
