@@ -27,9 +27,11 @@ jobs:
           python3 -m pip install .[all] -v
           python3 -m pip install pyinstaller
       - name: Build package
-        run: pyinstaller --onefile llama_cpp/server/__main__.py --name llama-server
+        run: pyinstaller wechatbot.spec
       - name: upload artifact
         uses: actions/upload-artifact@v3
         with:
             name: llama-server
-            path: dist/*
+            path: |
+              dist/*
+              
