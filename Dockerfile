@@ -1,4 +1,4 @@
 FROM debian:12-slim
-COPY dist/ /usr/local/bin/
+COPY dist/ /bin/
 VOLUME ["/data/"]
 ENTRYPOINT [ "llama-server" ]
